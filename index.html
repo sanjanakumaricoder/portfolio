@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= initial-scale=1.0">
+    <title>whisperdream</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="navbar">
+        <div class="logo">
+        <img src="https://plus.unsplash.com/premium_photo-1686593922853-0b6ba460f2c6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZHJlYW1zJTIwcGhvdG98ZW58MHx8MHx8fDA%3D">
+
+        <h1>WhisperDreams</h1>
+       
+        </div> 
+       
+        <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+         <li><a href="#service">Service</a></li>
+          <li><a href="#contact">Contact</a></li>   
+              
+    </ul>
+   
+ </div>
+
+    <audio id="bg-music" loop>
+        <!-- <source src="assets/emotional-piano-music-256262.mp3" type="audio/mpeg" /> -->
+         <source src="assets/sapne-bade-305719.mp3" type="audio/mpeg" />
+       
+    </audio>
+    <button onclick="document.getElementById('bg-music').play()">
+        play music
+    </button>
+    <div class="container" id="home">
+        <h1>WhisperDreams</h1>
+        <p class="subtitle">Write your dream & unlock its hidden whisper......</p>
+
+        <!-- <textarea id="dreaminput" placeholder="Describe your dream here......."></textarea> -->
+
+        <p>What type of dream did you have?</p>
+<div display: flex; flex-wrap: wrap; gap: 10px;>
+    <button onclick="setDream('Flying over clouds 🌥️')">🌥️Flying</button>
+<button onclick="setDream('Falling endlessly ⛔')">⛔Falling</button>
+<button onclick="setDream('Meeting a stranger 🧑‍🤝‍🧑')">🧑‍🤝‍🧑Meeting</button>
+<button onclick="setDream('Lost in forest 🌲')">🌲Lost</button>
+<button onclick="setDream('Time travel ⏳')">⏳Time Travel</button>
+</div>
+
+<p id="output"></p>
+
+
+   <div id="dreamMeaning" class="meaning-card hidden"></div>
+    </div>
+</section>
+    
+
+
+<section id="about" class="about-section">
+    <h2>About us</h2>
+    <p>WhisperDreams एक जादुई जगह है जहाँ आपके सपनों को एक आवाज़ मिलती है। ✨<br>
+    चाहे आप बादलों के ऊपर उड़ रहे हों ☁ या किसी अनजाने रास्ते पर गिर रहे हों 😨 — यह प्लेटफ़ॉर्म आपके सपनों का अर्थ समझने में मदद करता है।<br><br>
+    प्यार और कल्पना से बना यह वेबसाइट आपको आपके मन की गहराइयों से जोड़ने का प्रयास करती है। 
+
+</p>
+
+<div class="vision-mission">
+    <h3>🌌 Our Vision</h3>
+    <p>हर सपने के पीछे छुपे रहस्यों को उजागर करना — ताकि लोग खुद को और बेहतर समझ सकें।</p>
+  
+  <h3>🌠 Our Mission</h3>
+  <p>हर व्यक्ति के सपनों को एक आवाज़ देना और उन्हें आत्म-खोज की यात्रा में मार्गदर्शन करना।</p>
+  <img src="https://images.unsplash.com/photo-1532384812808-989f2f89adb" alt="">
+
+  <div class="team-intro">
+    <h3>👩‍💻 Meet the Creator</h3>
+      <p>🗨 "मैंने WhisperDreams को इसलिए बनाया, ताकि हर सपना सुना जा सके — क्योंकि हर सपना एक संकेत है, एक कहानी है।"</p>
+  </div>
+
+
+  <div class="how-it-work">
+    <h3>🔍 How It Works</h3>
+    <ol>
+        <li>अपना सपना चुनें या लिखें</li>
+        <li>हम उसका गुप्त अर्थ बताते हैं</li>
+        <li>आप जान पाते हैं — सपनों के पीछे की कहानी</li>
+    </ol>
+  </div>
+</div>
+</section>  
+
+
+ <section id="gallery" class="gallery-section">
+  <h2>🖼 Dream Gallery</h2>
+  <p class="gallery-subtext">कुछ सपने तस्वीरों में बयां होते हैं... इन visuals के ज़रिए महसूस कीजिए वो जादू ✨</p>
+
+  <div class="gallery-grid">
+    <img src="https://media.istockphoto.com/id/1426559579/photo/female-tourist-enjoying-watching-hot-air-balloons-flying-in-the-sky-at-rooftop-of-hotel-where.webp?a=1&b=1&s=612x612&w=0&k=20&c=W68M0yGxtFK5IvhAaG5BWbbUt-Y4mDhvYPZv8AUrUxY=" alt="Flying dream">
+    <img src="https://images.unsplash.com/photo-1639048661376-83b9c748e961?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fEZhbGxpbmclMjBkcmVhbXxlbnwwfHwwfHx8MA%3D%3D" alt="Falling dream">
+    <img src="https://images.unsplash.com/photo-1673197260270-36cd477f5ba9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8VGltZSUyMFRyYXZlbCUyMGRyZWFtfGVufDB8fDB8fHww" alt="Time Travel dream">
+    <img src="https://images.unsplash.com/photo-1615308815684-5d7481ea400b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fExvc3QlMjBpbiUyMGRyZWFtfGVufDB8fDB8fHww" alt="Lost in dream">
+    <img src="https://images.unsplash.com/photo-1582494467464-ce85152f93dc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8TWVldGluZyUyMHNvbWVvbmUlMjBpbiUyMGRyZWFtfGVufDB8fDB8fHww" alt="Meeting someone in dream">
+    <img src="https://images.unsplash.com/photo-1709735139298-1d5932324f4b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8UGVhY2VmdWwlMjBkcmVhbXxlbnwwfHwwfHx8MA%3D%3D" alt="Peaceful dream">
+  </div>
+</section>
+
+
+
+
+
+<section id="service" class="service-section">
+  <h2>💫 Our Services</h2>
+  <p class="service-subtext">WhisperDreams offers personalized dream interpretations and emotional reflections to guide your inner journey.</p>
+
+  <div class="service-cards">
+
+    <div class="service-card">
+      <img src="https://img.icons8.com/fluency/48/dream.png" alt="Dream Analysis Icon" />
+      <h3>Dream Analysis</h3>
+      <p>Get deep insights into your recurring or strange dreams with symbolic decoding and emotional guidance.</p>
+    </div>
+
+    <div class="service-card">
+      <img src="https://img.icons8.com/color/48/self-care.png" alt="Emotional Healing Icon" />
+      <h3>Emotional Healing</h3>
+      <p>Feeling anxious or heavy? WhisperDreams helps ease your mind with soothing messages and supportive vibes.</p>
+    </div>
+
+    <div class="service-card">
+      <img src="https://img.icons8.com/color/48/fairy.png" alt="Visualization Icon" />
+      <h3>Dream Visualization</h3>
+      <p>See your dreams come alive through curated images and visuals that match your subconscious imagination.</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="contact" class="contact-section">
+  <h2>💌 Send Us a Whisper</h2>
+  <p class="contact-subtext">Your dreams, thoughts, or questions are safe with us. Let your whisper travel through the stars...</p>
+
+  <div class="contact-container">
+    <form class="contact-form" onsubmit="sendWhisper(event)">
+      <input type="text" name="name" placeholder="🌙 Your Name" required />
+      <input type="email" name="email" placeholder="📧 Your Email" required />
+      <textarea name="message" rows="5" placeholder="✨ Share your dream or message..." required></textarea>
+      <button type="submit">🚀 Send Whisper</button>
+    </form>
+
+    <div class="thank-you" id="thankYouMsg">
+      🌟 Thank you! Your whisper has been sent into the dreamscape. We’ll reach back from the stars soon.
+    </div>
+  </div>
+</section>
+
+
+
+
+
+ <footer>@ 2025 sanjana kumari | WhisperDreams</footer> 
+<script> 
+    function setDream(dream){
+        document.getElementById("output").innerHTML =`<b>your dreamed:</b> ${dream}`;
+    }
+
+
+    function ShowMood(mood){
+    const message ={
+      anxious: "Breathe...... you`re  not alone.This moment will passs", 
+      lonely: "Even stars shine alone. you`re still glowing",
+      heavy: "you don`t need to carry it all today. rest",
+      lost: "not all who wander are lost you`re just exploring"
+    };
+
+    document.getElementById('mood-message').innerText = message[mood];
+  }
+
+  function sendWhisper(e) {
+    e.preventDefault();
+    document.querySelector('.contact-form').style.display = "none";
+    document.getElementById('thankYouMsg').style.display = "block";
+  }
+</script>
+
+
+
+
+</body>
+</html>
